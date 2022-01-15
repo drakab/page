@@ -1,3 +1,9 @@
+$borderColor: #fff;
+$textWhiteColor: #fff;
+$font14: 14px;
+$font18: 18px;
+$containerWidth: 1110px;
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 body{
@@ -8,14 +14,14 @@ body{
 body header{
     z-index: 2;
     position: absolute;
-    max-width: 1110px;
+    max-width: $containerWidth;
     margin: auto;
     right: 0;
     left: 0;
 }
 
 .container{
-    max-width: 1110px;
+    max-width: $containerWidth;
     margin: auto;
 }
 
@@ -61,8 +67,8 @@ ul{
 .main-menu li a{
     padding: 0 5px;
     text-decoration: none;
-    font-size: 14px;
-    color: #fff;
+    font-size: $font14;
+    color: $textWhiteColor;
 }
 
 body .logo{
@@ -84,9 +90,9 @@ body .logo img{
 body .logo-text{
     margin: 0;
     padding-left: 10px;
-    color: #fff;
+    color: $textWhiteColor;
     font-weight: 700;
-    font-size: 18px;
+    font-size: $font18;
     line-height: 21.6px;
 }
 
@@ -102,7 +108,7 @@ body .row{
 body .st-row .row-inner {
     position: absolute;
     top: 40px;
-    max-width: 1110px;
+    max-width: $containerWidth;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -113,9 +119,9 @@ body .st-row .row-inner {
 
 body .button{
     padding: 17px 52px;
-    background: #fff;
+    background: $textWhiteColor;
     border-radius: 6px;
-    font-size: 14px;
+    font-size: $font14;
     font-weight: 600;
     color: #ED4C5C;
     margin-top: 55px;
@@ -123,7 +129,7 @@ body .button{
 }
 
 body .text-box{
-    color: #fff;
+    color: $textWhiteColor;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -200,7 +206,7 @@ body .row-rd .wrapper
 
 .column-3 .box p:first-of-type{
     margin: 0;
-    font-size: 18px;
+    font-size: $font18;
     line-height: 21.6px;
     text-align: center;
     font-weight: 700;
@@ -209,13 +215,13 @@ body .row-rd .wrapper
 .column-3 .box p:nth-of-type(2){
     margin: 0;
     padding-top: 20px;
-    font-size: 14px;
+    font-size: $font14;
     line-height: 18px;
     text-align: center;
 }
 
 .column-3 .box a{
-    font-size: 14px;
+    font-size: $font14;
     line-height: 18px;
     color: #ED4C5C;
     padding-top: 23px;
@@ -278,7 +284,7 @@ body .row-last .column-6:first-of-type{
 }
 
 .text-block{
-    color: #fff;
+    color: $textWhiteColor;
 }
 
 .text-block p:first-of-type{
@@ -289,7 +295,7 @@ body .row-last .column-6:first-of-type{
 }
 
 .text-block p:nth-of-type(2){
-    font-size: 14px;
+    font-size: $font14;
     line-height: 19.6px;
     font-weight: 400;
     text-align: justify;
@@ -302,7 +308,7 @@ body .row-last form span{
 }
 
 body .row-last form input{
-    border: 1px solid #fff;
+    border: 1px solid $borderColor;
     border-radius: 6px;
     margin-bottom: 24px;
     background: transparent;
@@ -331,13 +337,13 @@ body .row-last form .form-row:first-of-type span:last-of-type{
 }
 
 body .row-last form input.btn{
-    border: 1.5px solid #fff;
+    border: 1.5px solid $borderColor;
     margin-bottom: 0;
-    font-size: 14px;
+    font-size: $font14;
     line-height: 16.8px;
     width: 160px;
     height: 50px;
-    color: #fff;
+    color: $textWhiteColor;
     padding: 17px 34px;
 }
 
@@ -346,6 +352,97 @@ body .row-last form input.btn{
     body .st-row .row-inner,
     .container{
         max-width: 900px;
+    }
+
+    body .text-box h1 {
+        font-size: 55px;
+        line-height: 65.4px;
+    }
+
+    body .text-box p {
+        font-size: 22px;
+        line-height: 32px;
+        margin-top: 29px;
+    }
+
+    body .button {
+        padding: 15px 49px;
+        font-size: 12px;
+        margin-top: 45px;
+    }
+
+    .column-3 .box p:first-of-type {
+        font-size: 15px;
+        line-height: 18.6px;
+    }
+
+    .column-3 .box p:nth-of-type(2) {
+        padding-top: 18px;
+        font-size: 13px;
+    }
+
+    .column-3 .box a {
+        font-size: 13px;
+        line-height: 16px;
+        padding-top: 18px;
+    }
+
+    .column-3 figure img{
+        max-width: 300px;
+        object-fit: contain;
+    }
+
+    .column-3 .box {
+        padding: 25px 25px 20px 25px;
+        min-height: 170px;
+    }
+
+    body .row-nd {
+        padding-bottom: 200px;
+    }
+
+    .column-12 p {
+        font-size: 30px;
+        line-height: 36.2px;
+        margin: 50px 0;
+    }
+
+    .big-number p {
+        font-size: 90px;
+        line-height: 100px;
+    }
+
+    body .row-last {
+        padding-top: 95px;
+        padding-bottom: 60px;
+    }
+
+    .text-block p:first-of-type {
+        font-size: 30px;
+        line-height: 36.2px;
+    }
+
+    .text-block p:nth-of-type(2) {
+        font-size: 12px;
+        line-height: 16.6px;
+        margin-top: 40px;
+    }
+
+    body .row-last .column-6:first-of-type {
+        max-width: 40%;
+    }
+
+    body .row-last form input {
+        margin-bottom: 20px;
+        padding: 17px 23px;
+    }
+
+    body .row-last form input.btn {
+        font-size: 12px;
+        line-height: 13.8px;
+        width: 160px;
+        height: auto;
+        padding: 14px 31px;
     }
 }
 
