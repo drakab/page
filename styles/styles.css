@@ -358,6 +358,7 @@ body .row-last form input {
   padding: 21px 31px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: #fff;
 }
 
 body .row-last form input::-webkit-input-placeholder {
