@@ -347,6 +347,14 @@ body .row-last form input.btn{
     padding: 17px 34px;
 }
 
+body #error-messages{
+    border: 1px solid #9b0000;
+    padding: 5px 10px;
+    margin-top: 15px;
+    color: $textWhiteColor;
+    display: none;
+}
+
 @media (max-width: 1200px){
     body header,
     body .st-row .row-inner,

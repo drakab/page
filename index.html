@@ -7,19 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <link rel="icon" type="image/x-icon" href="./assets/logo1.png">
+    <script defer src="./scripts/script.js"></script>
+    <script defer src="./scripts/scriptMenu.js"></script>
   </head>
   <body>
-    <script>
-        function menuFunction() {
-          var menu = document.getElementById("header-menu-mobile");
-          if (menu.style.display === "block") {
-            menu.style.display = "none";
-          } else {
-            menu.style.display = "block";
-          }
-        }
-        
-    </script>
         <div class="page">
             <div class="site-mobile-header">
                 <div class="logo">
@@ -55,37 +46,6 @@
                 </a>
             </div>
             <header>
-            <!---<div class="site-mobile-header">
-                    <div class="logo">
-                        <figure>
-                             <img src="./assets/logo.png">
-                        </figure>
-                    </div>
-                    <div id="header-menu-mobile">
-                        <nav>
-                            <ul class="mobile-menu">
-                                <li>
-                                    <a href="#overview">OVERVIEW</a>
-                                </li>
-                                <li>
-                                    <a href="#features">FEATURES</a>
-                                </li>
-                                <li>
-                                    <a href="#technology">TECHNOLOGY</a>
-                                </li>
-                                <li>
-                                    <a href="#contact">CONTACT</a>
-                                </li>
-                                <li>
-                                    <a href="#">SIGN UP</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                      </a>
-                </div> --->
                 <div class="site-header">
                     <div class="container">
                         <div class="main-header">
@@ -246,23 +206,23 @@
                                     </div>
                                 </div>
                                 <div class="column-6">
-                                    <form>
+                                    <form id="form" action="/" method="GET">
                                         <div class="form-row">
                                             <span>
-                                                <input type="text" id="name" name="name" required placeholder="First Name">
+                                                <input type="text" id="name" name="name" placeholder="First Name">
                                             </span>
                                             <span>
-                                                <input type="text" id="surname" name="surname" required placeholder="Lirst Name">
-                                            </span>
-                                        </div>
-                                        <div class="form-row">
-                                            <span>
-                                                <input type="text" pattern="[0-9]{9}" placeholder="Phone Number">
+                                                <input type="text" id="surname" name="surname" placeholder="Last Name">
                                             </span>
                                         </div>
                                         <div class="form-row">
                                             <span>
-                                                <input type="text" id="service" name="service" required placeholder="Select Service">
+                                                <input type="text" id="phone" name="phone" placeholder="Phone Number">
+                                            </span>
+                                        </div>
+                                        <div class="form-row">
+                                            <span>
+                                                <input type="text" id="service" name="service" placeholder="Select Service">
                                             </span>
                                         </div>
                                         <div class="form-row">
@@ -271,6 +231,7 @@
                                             </span>
                                         </div>
                                     </form>
+                                    <div id="error-messages"></div>
                                 </div>
                             </div>
                         </div>
