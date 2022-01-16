@@ -670,4 +670,21 @@ body .site-mobile-header{
     body .row-last form .form-row:first-of-type span:last-of-type {
         padding-left: 0px;
     }
+
+    .site-mobile-header a {
+        padding: 10px 17px;
+    }
+
+    .site-mobile-header a.icon img {
+        max-width: 18px;
+        height: 18px;
+    }
+
+    body .logo img {
+        max-width: 25px;
+    }
+
+    .site-mobile-header .logo {
+        padding-left: 15px;
+    }
 }
