@@ -20,7 +20,7 @@ form.addEventListener('submit', (e) =>{
         messages.push('Phone is required');
     }
     if (!phonenumber(phone.value)){
-        messages.push('Incorrect value of phone (expected xxx-xxx-xxx)');
+        messages.push('Incorrect value of phone number, expected: xxx-xxx-xxx');
     }
     if (service.value === '' || service.value == null){
         messages.push('Service is required');
