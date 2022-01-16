@@ -28,7 +28,6 @@ body header{
 body .main-menu{
     display: flex;
     justify-content: flex-end;
-    padding: 0 20px;
     margin: 0;
 }
 
@@ -382,7 +381,7 @@ body .row-last form input.btn{
     }
 
     .column-3 .box a {
-        font-size: 13px;
+        font-size: 14px;
         line-height: 16px;
         padding-top: 18px;
     }
@@ -446,4 +445,229 @@ body .row-last form input.btn{
     }
 }
 
+body .site-mobile-header{
+    display: none;
+}
 
+.site-mobile-header {
+    overflow: hidden;
+    background-color: #df4e61c7;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.site-mobile-header .logo{
+    padding-left: 20px;
+}
+  
+.site-mobile-header #header-menu-mobile {
+    display: none;
+}
+  
+.site-mobile-header a {
+    padding: 17px 24px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    color: #fff;
+
+}
+  
+.site-mobile-header a.icon {
+    background: #d71629;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.site-mobile-header a.icon img
+  {
+    max-width: 23px;
+    height: 23px;
+    object-fit: contain;
+}
+
+.site-mobile-header a:hover {
+    background-color: #df4e61;
+}
+
+@media (max-width: 991px){
+    body header,
+    body .st-row .row-inner,
+    .container{
+        max-width: 700px;
+    }
+
+    body .site-header{
+        display: none;
+    }
+
+    body .site-mobile-header{
+        display: block;
+    }
+
+    body .logo img{
+        width: auto;
+    }
+
+    body .text-box h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    body .text-box p {
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 16px;
+    }
+
+    body .button {
+        padding: 13px 45px;
+        font-size: 12px;
+        margin-top: 25px;
+    }
+
+    body .row-nd .wrapper,
+    body .row-rd .wrapper,
+    body .row-last .wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column-3{
+        width: 100%;
+        margin-bottom: 135px;
+    }
+
+    body .row-last .container .wrapper .column-6{
+        width: 100%;
+        max-width: inherit;
+    }
+
+    body .row-last .column-6:first-of-type {
+        margin-bottom: 40px;
+    }
+
+    .column-3 figure img{
+        max-width: 100%;
+    }
+
+    .column-3 .box{
+        max-width: 45%;
+    }
+
+    .column-12 p,
+    body .row-rd .column-12 p {
+        font-size: 30px;
+        line-height: 32.2px;
+        margin: 40px 0;
+    }
+
+    body .row-nd {
+        padding-bottom: 0px;
+    }
+
+    .column-3 .box p:first-of-type {
+        font-size: 18px;
+        line-height: 21.6px;
+    }
+
+    .column-3 .box p:nth-of-type(2){
+        font-size: 14px;
+    }
+
+    .row-rd .column-3 .box{
+        top: 15px;
+    }
+
+    body .row-rd{
+        padding-bottom: 0;
+    }
+
+    body .row-last {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 767px){
+    body .st-row img{
+        object-fit: cover;
+        min-height: 400px;
+    }
+
+    body .text-box h1 {
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .column-3 .box {
+        max-width: 330px;
+    }
+
+    body header,
+    .container,
+    body .st-row .row-inner {
+        max-width: 100%;
+        margin: 0 5%; 
+    }
+
+    body .st-row .row-inner{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .big-number p {
+        font-size: 75px;
+        line-height: 90px;
+    }
+}
+
+@media (max-width: 480px){
+    body .text-box h1 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    body .text-box p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 16px;
+    }
+
+    .column-3 .box p:first-of-type {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .column-3 .box a {
+        padding-top: 14px;
+    }
+
+    .column-12 p,
+    body .row-rd .column-12 p {
+        font-size: 25px;
+        line-height: 27px;
+        margin: 30px 0;
+    }
+
+    body .row-last form .form-row{
+        flex-direction: column;
+    }
+
+    body .row-last form .form-row:first-of-type span {
+        width: 100%;
+    }
+
+    body .row-last form .form-row:first-of-type span:first-of-type {
+        padding-right: 0px;
+    }
+
+    body .row-last form .form-row:first-of-type span:last-of-type {
+        padding-left: 0px;
+    }
+}

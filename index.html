@@ -9,8 +9,83 @@
     <link rel="icon" type="image/x-icon" href="./assets/logo1.png">
   </head>
   <body>
+    <script>
+        function menuFunction() {
+          var menu = document.getElementById("header-menu-mobile");
+          if (menu.style.display === "block") {
+            menu.style.display = "none";
+          } else {
+            menu.style.display = "block";
+          }
+        }
+        
+    </script>
         <div class="page">
+            <div class="site-mobile-header">
+                <div class="logo">
+                    <figure>
+                        <img src="./assets/logo.png">
+                    </figure>
+                </div>
+                <div id="header-menu-mobile" onclick="menuFunction()">
+                    <nav>
+                        <ul class="mobile-menu">
+                            <li>
+                                <a href="#overview">OVERVIEW</a>
+                            </li>
+                            <li>
+                                <a href="#features">FEATURES</a>
+                            </li>
+                            <li>
+                                <a href="#technology">TECHNOLOGY</a>
+                            </li>
+                            <li>
+                                <a href="#contact">CONTACT</a>
+                            </li>
+                            <li>
+                                <a href="#">SIGN UP</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+                    <figure>
+                        <img src="assets/hamburger.png">
+                    </figure>
+                </a>
+            </div>
             <header>
+            <!---<div class="site-mobile-header">
+                    <div class="logo">
+                        <figure>
+                             <img src="./assets/logo.png">
+                        </figure>
+                    </div>
+                    <div id="header-menu-mobile">
+                        <nav>
+                            <ul class="mobile-menu">
+                                <li>
+                                    <a href="#overview">OVERVIEW</a>
+                                </li>
+                                <li>
+                                    <a href="#features">FEATURES</a>
+                                </li>
+                                <li>
+                                    <a href="#technology">TECHNOLOGY</a>
+                                </li>
+                                <li>
+                                    <a href="#contact">CONTACT</a>
+                                </li>
+                                <li>
+                                    <a href="#">SIGN UP</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                </div> --->
                 <div class="site-header">
                     <div class="container">
                         <div class="main-header">
