@@ -255,8 +255,10 @@ body .row-rd .wrapper
     line-height: 14.4px;
 }
 
-.row-rd .column-3 figure{
+.row-rd .column-3 figure img {
     height: 80px;
+    width: auto;
+    object-fit: contain;
 }
 
 body .row-rd{
